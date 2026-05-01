@@ -1,0 +1,78 @@
+[pl_row pagelayer-id="QX7HjqwXgPjhPnWC"  stretch="auto" col_gap="10" width_content="auto" row_height="default" overlay_hover_delay="400" row_shape_top_color="#227bc3" row_shape_top_width="100" row_shape_top_height="100" row_shape_bottom_color="#e44993" row_shape_bottom_width="100" row_shape_bottom_height="100" ele_bg_type="image" ele_bg_img="{{theme_url}}/images/other-pagebg.jpg" ele_bg_attachment="scroll" ele_bg_posx="center" ele_bg_posy="center" ele_bg_repeat="no-repeat" ele_bg_size="cover" ele_padding="150px,0px,150px,0px" overlay_type="color" overlay_transperancy="0.5" overlay_color="#000000ff"]
+[pl_col pagelayer-id="dzWa61l8DH7jBOcS"  widget_space="15" overlay_hover_delay="400"]
+[pl_heading pagelayer-id="E6G8CI5qVRGCWJkh"  heading_state="normal" color="#ffffffff" heading_typo="Questrial,60,,500,,,Solid,,,," animation="fadeInDown" animation_delay="600" heading_typo_mobile=",50,,,,,Solid,,,,"]
+
+
+
+Contact Us[/pl_heading]
+[pl_divider pagelayer-id="xdw1IrBWQjrPoFVS"  divider_style="solid" divider_color="#57c1b6ff" divider_weight="3" divider_widht="10" divider_gap="10" divider_alignment="left" divider_widht_tablet="10" divider_widht_mobile="20"]
+[/pl_divider]
+[/pl_col]
+[/pl_row]
+[pl_row pagelayer-id="EiSlgTbYjKQDTS8x"  stretch="auto" col_gap="10" width_content="auto" row_height="default" overlay_hover_delay="400" row_shape_top_color="#227bc3" row_shape_top_width="100" row_shape_top_height="100" row_shape_bottom_color="#e44993" row_shape_bottom_width="100" row_shape_bottom_height="100" ele_margin="100px,0px,0px,0px"]
+[pl_col pagelayer-id="zJR9aeNusaAFG0m1"  widget_space="15" overlay_hover_delay="400" col="2"]
+[/pl_col]
+[pl_col pagelayer-id="TrMzMLGSDGYgN19u"  widget_space="15" overlay_hover_delay="400" col="8"]
+[pl_heading pagelayer-id="Adq4wvNtWTnhp2PI"  heading_state="normal" color="#111111" align="center" heading_typo="Questrial,45,,500,,,Solid,,,," animation="fadeInDown" animation_delay="600" heading_typo_mobile=",35,,,,,Solid,,,,"]
+
+
+
+Get In Touch[/pl_heading]
+[pl_divider pagelayer-id="OKGd5FFZ5lz4lE0R"  divider_style="solid" divider_color="#57c1b6ff" divider_weight="3" divider_widht="15" divider_gap="10" divider_alignment="center" divider_widht_tablet="10" divider_widht_mobile="20"]
+[/pl_divider]
+[pl_contact pagelayer-id="oywYDvnFTG5cdLow"  form="contact-form" name="Contact Form" form_position="center" space_label=",,10," input_state="normal" input_padding="10,10" radio_padding="10,10" field_hover_delay="400" submit="Send Message" type="pagelayer-btn-custom" size="pagelayer-btn-custom" btn_hover_delay="400" icon_position="pagelayer-btn-icon-left" icon_spacing="5" con_post_id="9602" placeholder_typo="Muli,14,,500,,,Solid,,,," btn_bg_color="#0986c000" btn_color="#000000ff" btn_border_type="solid" btn_border_color="#57c1b6ff" btn_border_width="2,2,2,2" btn_custom_size="10,20" btn_typo="Questrial,16,,500,,,Solid,,,," btn_hover="hover" btn_bg_color_hover="#57c1b6ff" btn_border_radius="0,0,0,0" field_state="focus" field_border_type_focus="solid" field_border_color_focus="#57c1b6ff" field_border_width_focus="2,2,2,2" field_border_radius_focus="0,0,0,0" animation="fadeInUp" animation_delay="600"]
+[pl_contact_item pagelayer-id="tifKvwS4OQGco9Cz"  label_name="Name" field_type="text" values="One
+Two" field_name="name" field_width="45" space_between="0,10,10,0" label_as_holder="true" field_display="inline-block"]
+[/pl_contact_item]
+[pl_contact_item pagelayer-id="1tFQRKFO3XyXP3y7"  label_name="Email" field_type="email" values="One
+Two" field_name="name" field_width="45" space_between="0,0,10,10" label_as_holder="true" field_display="inline-block"]
+[/pl_contact_item]
+[pl_contact_item pagelayer-id="3wzTeNpStITpwmQq"  label_name="Subject" field_type="text" values="One
+Two" field_name="subject" field_width="90" space_between="0,0,10,0" label_as_holder="true" field_display="inline-block"]
+[/pl_contact_item]
+[pl_contact_item pagelayer-id="8VXtN2L9riwTXLZ5"  label_name="Message" field_type="textarea" values="One
+Two" field_name="subject" field_width="90" space_between="0,0,10,0" label_as_holder="true" field_display="inline-block" textarea_rows="6"]
+[/pl_contact_item]
+[/pl_contact]
+[/pl_col]
+[pl_col pagelayer-id="pvQtje1d63QdMqi5"  widget_space="15" overlay_hover_delay="400" col="2"]
+[/pl_col]
+[/pl_row]
+[pl_row pagelayer-id="cpy8PcpmIvNYs3Wa"  stretch="auto" col_gap="10" width_content="auto" row_height="default" overlay_hover_delay="400" row_shape_top_color="#227bc3" row_shape_top_width="100" row_shape_top_height="100" row_shape_bottom_color="#e44993" row_shape_bottom_width="100" row_shape_bottom_height="100" ele_margin="60px,0px,0px,0px"]
+[pl_col pagelayer-id="NKZKpgNBpItyn8JJ"  widget_space="15" overlay_hover_delay="400" col="4" animation="fadeInLeft" animation_delay="600"]
+[pl_iconbox pagelayer-id="htLsAPWcYrARtAKE"  service_icon="fas fa-map-marker-alt" service_alignment="top" service_vertical_alignment="middle" service_icon_view="stacked" service_icon_padding="20" service_icon_state="normal" service_icon_color="#ffffffff" service_icon_font_size="35" service_icon_hover_delay="400" service_bor_state="normal" service_heading="Address" heading_alignment="center" service_title_spacing="10,0,0,0" heading_state="normal" service_heading_color="#000000ff" service_heading_typo="Questrial,25,,600,,,Solid,,,," heading_delay="400" service_text_alignment="center" service_btn_hover_delay="400" service_icon_background_color="#57c1b6ff" service_icon_shape_type="circle"]
+
+
+
+[/pl_iconbox]
+[pl_address pagelayer-id="cz1x3kscoz9TJmlU"  icon="" align="center" ele_css="{{element}} .pagelayer-address {text-align:center;}" typography="Muli,14,,500,,,Solid,1.4,,," ele_margin="-5px,0px,0px,0px"]
+[/pl_address]
+[/pl_col]
+[pl_col pagelayer-id="S8xo4ZOLWzZZMiKC"  widget_space="15" overlay_hover_delay="400" col="4" animation="fadeInUp" animation_delay="600"]
+[pl_iconbox pagelayer-id="ubAZtdepsTHyqY2u"  service_icon="fas fa-mobile-alt" service_alignment="top" service_vertical_alignment="middle" service_icon_view="stacked" service_icon_padding="20" service_icon_state="normal" service_icon_color="#ffffffff" service_icon_font_size="35" service_icon_hover_delay="400" service_bor_state="normal" service_heading="Phone" heading_alignment="center" service_title_spacing="10,0,0,0" heading_state="normal" service_heading_color="#000000ff" service_heading_typo="Questrial,25,,600,,,Solid,,,," heading_delay="400" service_text_alignment="center" service_btn_hover_delay="400" service_icon_background_color="#57c1b6ff" service_icon_shape_type="circle" ele_margin_tablet="20px,0px,0px,0px"]
+
+
+
+[/pl_iconbox]
+[pl_phone pagelayer-id="9wcWcD5Y3hUQ9EXX"  icon="" align="center" typography="Muli,14,,500,,,Solid,,,,"]
+[/pl_phone]
+[/pl_col]
+[pl_col pagelayer-id="LTLldVCf54GIOZsW"  widget_space="15" overlay_hover_delay="400" col="4" animation="fadeInRight" animation_delay="600"]
+[pl_iconbox pagelayer-id="AeVjjlV16hpGP3LX"  service_icon="fas fa-envelope" service_alignment="top" service_vertical_alignment="middle" service_icon_view="stacked" service_icon_padding="20" service_icon_state="normal" service_icon_color="#ffffffff" service_icon_font_size="35" service_icon_hover_delay="400" service_bor_state="normal" service_heading="Email" heading_alignment="center" service_title_spacing="10,0,0,0" heading_state="normal" service_heading_color="#000000ff" service_heading_typo="Questrial,25,,600,,,Solid,,,," heading_delay="400" service_text_alignment="center" service_btn_hover_delay="400" service_icon_background_color="#57c1b6ff" service_icon_shape_type="circle" ele_margin_tablet="20px,0px,0px,0px"]
+
+
+
+[/pl_iconbox]
+[pl_email pagelayer-id="EWlrWuhgtdZ0Aopt"  icon="" align="center" typography="Muli,14,,,,,Solid,,,,"]
+[/pl_email]
+[/pl_col]
+[/pl_row]
+[pl_row pagelayer-id="6ovP7C5Us5x5kkH1"  stretch="full" col_gap="0" width_content="full" row_height="default" overlay_hover_delay="400" row_shape_top_color="#227bc3" row_shape_top_width="100" row_shape_top_height="100" row_shape_bottom_color="#e44993" row_shape_bottom_width="100" row_shape_bottom_height="100" ele_margin="60px,0px,0px,0px" animation="fadeInUp" animation_delay="600"]
+[pl_col pagelayer-id="rE9tUD31Av1MJphY"  widget_space="15" overlay_hover_delay="400"]
+[pl_google_maps pagelayer-id="hE2cnNSOaZSPHoHK"  zoom="10" height="450"]
+
+
+
+New York, New York, USA[/pl_google_maps]
+[/pl_col]
+[/pl_row]

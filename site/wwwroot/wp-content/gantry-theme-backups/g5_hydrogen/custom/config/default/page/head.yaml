@@ -1,0 +1,23 @@
+meta:
+  -
+    'fb:app_id': ''
+head_bottom: "<style>\n  @import url(\"https://use.typekit.net/iot8jme.css\");\n</style>\n\n<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-76S1G2ESZH\">\n</script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-76S1G2ESZH');\n</script>"
+atoms:
+  -
+    id: analytics-5614
+    type: analytics
+    title: 'Google Analytics'
+    attributes:
+      enabled: '1'
+      ua:
+        code: UA-193147740-1
+        anonym: '0'
+  -
+    id: assets-2730
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css:
+        - { location: '', inline: '<link rel="stylesheet" href="https://use.typekit.net/qlk7ufi.css">', extra: {  }, priority: '0', name: 'New item' }
+      javascript: {  }

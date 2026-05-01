@@ -1,0 +1,41 @@
+2026-01-27T09:40:42.5818428Z Container start method called.
+2026-01-27T09:40:42.5820964Z Establishing network.
+2026-01-27T09:40:42.5822809Z Pulling image: appsvc/wordpress-debian-php:8.4_20260113.8.tuxprod.
+2026-01-27T09:40:42.6958706Z Container is starting.
+2026-01-27T09:40:42.6961661Z Establishing user namespace if not established already.
+2026-01-27T09:40:42.6963190Z Establishing network if not established already.
+2026-01-27T09:40:42.6964936Z Mounting volumes.
+2026-01-27T09:40:42.6966924Z Nested mountpoint 
+2026-01-27T09:40:42.6997966Z Nested mountpoint volatile/logs
+2026-01-27T09:40:42.7039259Z Nested mountpoint 
+2026-01-27T09:40:42.7044520Z Nested mountpoint 
+2026-01-27T09:40:42.7603336Z Creating container.
+2026-01-27T09:40:42.7604900Z Creating pipes for streaming container io.
+2026-01-27T09:40:42.7606270Z Creating stdout named pipe at /podr/container/pipe/2be5b38fdcba_cerccongo/stdout_dc056cb85074408e9b2643714bad57f0.
+2026-01-27T09:40:42.7608669Z Successfully created stdout named pipe at: /podr/container/pipe/2be5b38fdcba_cerccongo/stdout_dc056cb85074408e9b2643714bad57f0.
+2026-01-27T09:40:42.7610024Z Opening named pipe /podr/container/pipe/2be5b38fdcba_cerccongo/stdout_dc056cb85074408e9b2643714bad57f0 for reading in non-blocking mode.
+2026-01-27T09:40:42.7611761Z Successfully opened named pipe: /podr/container/pipe/2be5b38fdcba_cerccongo/stdout_dc056cb85074408e9b2643714bad57f0.
+2026-01-27T09:40:42.7613581Z Successfully removed non-blocking flag from /podr/container/pipe/2be5b38fdcba_cerccongo/stdout_dc056cb85074408e9b2643714bad57f0.
+2026-01-27T09:40:42.7615111Z Creating stderr named pipe at /podr/container/pipe/2be5b38fdcba_cerccongo/stderr_30c9f3f38f3e40f9b8603aa973b234b6.
+2026-01-27T09:40:42.7616882Z Successfully created stderr named pipe at: /podr/container/pipe/2be5b38fdcba_cerccongo/stderr_30c9f3f38f3e40f9b8603aa973b234b6.
+2026-01-27T09:40:42.7618119Z Opening named pipe /podr/container/pipe/2be5b38fdcba_cerccongo/stderr_30c9f3f38f3e40f9b8603aa973b234b6 for reading in non-blocking mode.
+2026-01-27T09:40:42.7619909Z Successfully opened named pipe: /podr/container/pipe/2be5b38fdcba_cerccongo/stderr_30c9f3f38f3e40f9b8603aa973b234b6.
+2026-01-27T09:40:42.7621186Z Successfully removed non-blocking flag from /podr/container/pipe/2be5b38fdcba_cerccongo/stderr_30c9f3f38f3e40f9b8603aa973b234b6.
+2026-01-27T09:40:42.7622712Z Overriding PORT environment variable with pre-calculated port: 80.
+2026-01-27T09:40:42.7623961Z Setting value of PORT variable to 80
+2026-01-27T09:40:42.7627206Z Creating container with image: appsvc/wordpress-debian-php:8.4_20260113.8.tuxprod from registry: mcr.microsoft.com and fully qualified image name: mcr.microsoft.com/appsvc/wordpress-debian-php:8.4_20260113.8.tuxprod
+2026-01-27T09:40:43.2009121Z Starting container: 2be5b38fdcba_cerccongo.
+2026-01-27T09:40:43.4870724Z Starting watchers and probes.
+2026-01-27T09:40:43.4874580Z Starting metrics collection.
+2026-01-27T09:40:43.4877118Z Container is running.
+2026-01-27T09:40:43.5090660Z Container start method finished after 927 ms.
+2026-01-27T09:42:07.5232921Z Site startup probe succeeded after 84.0133769 seconds.
+2026-01-27T09:42:08.1310595Z Site is running with deployment version: 6482ba79-f0b9-4d89-b908-fdc497f9035e
+2026-01-27T09:42:08.1313565Z Site started.
+2026-01-27T16:36:51.2940994Z Container is terminating. Grace period: 5 seconds.
+2026-01-27T16:36:51.3268128Z Stop and delete container. Retry count = 0
+2026-01-27T16:36:51.3278003Z Stopping container: 2be5b38fdcba_cerccongo.
+2026-01-27T16:36:56.5608647Z Deleting container: 2be5b38fdcba_cerccongo. Retry count = 0
+2026-01-27T16:36:57.0811449Z Container spec TerminationMessagePolicy  path 
+2026-01-27T16:36:57.0813760Z Container is terminated. Total time elapsed: 5787 ms.
+2026-01-27T16:36:57.0817834Z Site: cerccongo stopped.

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kivu 24 - News & Media</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f8; margin: 0; }
+    header { background: #002147; color: #fff; padding: 20px 0; text-align: center; }
+    nav { background: #003366; color: #fff; padding: 10px 0; text-align: center; }
+    nav a { color: #fff; margin: 0 20px; text-decoration: none; font-weight: bold; }
+    .container { max-width: 1100px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #aaa; padding: 30px; }
+    .headline { font-size: 2.2em; margin-bottom: 10px; color: #002147; }
+    .section-title { color: #003366; margin-top: 35px; font-size: 1.5em; }
+    .news-list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 30px; margin: 25px 0; }
+    .news-item { background: #e9eef4; padding: 15px; border-radius: 6px; }
+    .news-item h3 { margin-top: 0; }
+    .video-list { display: flex; gap: 30px; margin: 20px 0; }
+    .video-item { flex: 1; background: #e9eef4; padding: 15px; border-radius: 6px; }
+    footer { background: #002147; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px; }
+    @media (max-width: 900px) {
+      .news-list { grid-template-columns: 1fr 1fr; }
+      .video-list { flex-direction: column; }
+    }
+    @media (max-width: 600px) {
+      .news-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kivu 24</h1>
+    <p>Live News, Reports & Media from Kivu and beyond</p>
+  </header>
+  <nav>
+    <a href="#news">News</a>
+    <a href="#videos">Videos</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <div class="headline">Breaking: Major Developments in Kivu Region</div>
+    <section id="news">
+      <div class="section-title">Latest News</div>
+      <div class="news-list">
+        <div class="news-item">
+          <h3>Kivu 24 Launches!</h3>
+          <p>Kivu 24 is now live, bringing you up-to-the-minute news, live reports, and features from the heart of Africa.</p>
+          <small>Oct 7, 2025</small>
+        </div>
+        <div class="news-item">
+          <h3>Economic Growth in Kivu</h3>
+          <p>Local businesses are seeing unprecedented growth, with new opportunities for entrepreneurs and investors.</p>
+          <small>Oct 6, 2025</small>
+        </div>
+        <div class="news-item">
+          <h3>Health Initiatives</h3>
+          <p>Health organizations partner to expand medical services and education in remote areas of Kivu.</p>
+          <small>Oct 5, 2025</small>
+        </div>
+      </div>
+    </section>
+    <section id="videos">
+      <div class="section-title">Featured Videos</div>
+      <div class="video-list">
+        <div class="video-item">
+          <h4>Interview: Kivu Leaders</h4>
+          <video width="100%" controls>
+            <source src="sample-interview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-item">
+          <h4>Report: Life in Goma</h4>
+          <video width="100%" controls>
+            <source src="sample-report.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-title">About Kivu 24</div>
+      <p>Kivu 24 is your trusted source for daily news, analysis, and multimedia from the Kivu region and the Democratic Republic of Congo. Our team is dedicated to delivering independent journalism, in-depth reports, and video coverage of events that matter.</p>
+    </section>
+    <section id="contact">
+      <div class="section-title">Contact Us</div>
+      <p>
+        Have a story or inquiry? Email us at <a href="mailto:info@kivu24.com">info@kivu24.com</a>
+      </p>
+    </section>
+  </div>
+  <footer>
+    &copy; 2025 Kivu 24. All rights reserved.
+  </footer>
+</body>
+</html>

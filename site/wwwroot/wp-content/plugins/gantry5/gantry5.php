@@ -1,0 +1,182 @@
+<?php
+/**
+ * Plugin Name: Gantry 5 Framework
+ * Plugin URI: http://gantry.org/
+ * Description: Framework for Gantry 5 based themes.
+ * Version: 5.5.25
+ * Author: Tiger12, LLC
+ * Author URI: http://tiger12.com/
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: gantry5
+ * Domain Path: /admin/languages
+ * 
+ * originalCreator: RocketTheme (Gantry Framework)
+ * currentDeveloper: Tiger12, LLC
+ */
+
+defined('ABSPATH') or die;
+
+// Fail safe version check for PHP < 8.1.0
+if (PHP_VERSION_ID < 80100) {
+    if (is_admin()) {
+        add_action('admin_notices', 'gantry5_php_version_error');
+    }
+    return;
+}
+
+require_once dirname(__FILE__) . '/src/Loader.php';
+
+if (!defined('GANTRY5_PATH')) {
+    // Works also with symlinks.
+    define('GANTRY5_PATH', rtrim(WP_PLUGIN_DIR, '/\\') . '/gantry5');
+}
+
+if (!is_admin()) {
+    return;
+}
+
+// Load plugin settings.
+require_once dirname(__FILE__) . '/admin/settings.php';
+
+if (!defined('GANTRYADMIN_PATH')) {
+    // Works also with symlinks.
+    define('GANTRYADMIN_PATH', GANTRY5_PATH . '/admin');
+}
+
+// Add Gantry 5 defaults on plugin activation
+// TODO: change the admin_init to a better hook ie. only when plugin updates
+register_activation_hook(__FILE__, 'gantry5_plugin_defaults');
+add_action('admin_init', 'gantry5_plugin_defaults');
+
+function gantry5_plugin_defaults()
+{
+    $defaults = array(
+        'production'       => '0',
+        'use_media_folder' => '0',
+        'assign_posts'     => '1',
+        'assign_pages'     => '1',
+        'debug'            => '0',
+        'offline'          => '0',
+        'offline_message'  => 'Site is currently in offline mode. Please try again later.',
+        'cache_path'       => '',
+        'compile_yaml'     => '1',
+        'compile_twig'     => '1'
+    );
+
+    $option = (array)get_option('gantry5_plugin');
+
+    update_option('gantry5_plugin', $option + $defaults);
+}
+
+add_filter('kses_allowed_protocols', 'add_gantry5_streams_to_kses');
+
+function add_gantry5_streams_to_kses($protocols)
+{
+    $streams = array(
+        'gantry-cache',
+        'gantry-themes',
+        'gantry-theme',
+        'gantry-assets',
+        'gantry-media',
+        'gantry-engines',
+        'gantry-engine',
+        'gantry-layouts',
+        'gantry-particles',
+        'gantry-blueprints',
+        'gantry-config',
+        'wp-includes',
+        'wp-content',
+    );
+
+    $protocols = array_merge($protocols, $streams);
+    return $protocols;
+}
+
+// Initialize plugin language and fallback to en_US if the .mo file can't be found
+$domain         = 'gantry5';
+$languages_path = basename(GANTRY5_PATH) . '/admin/languages';
+
+if (load_plugin_textdomain($domain, false, $languages_path) === false) {
+    add_filter('plugin_locale', 'modify_gantry5_locale', 10, 2);
+    load_plugin_textdomain($domain, false, $languages_path);
+    remove_filter('plugin_locale', 'modify_gantry5_locale', 10);
+}
+
+function modify_gantry5_locale($locale, $domain = null)
+{
+    // Revert the gantry5 domain locale to en_US
+    if ($domain === 'gantry5' || $domain === 'nucleus') {
+        $locale = 'en_US';
+    }
+
+    return $locale;
+}
+
+function gantry5_php_version_error()
+{
+    echo '<div class="error"><p>';
+    echo sprintf("You are running <b>PHP %s</b>, but <b>Gantry 5 Framework</b> needs at least <b>PHP %s</b> to run.", PHP_VERSION, '8.1.0');
+    echo '</p></div>';
+}
+
+// Include the plugin/theme update checker library
+require_once plugin_dir_path(__FILE__) . 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+// Check and update for g5_helium theme
+$helium_theme_path = get_theme_root() . '/g5_helium/style.css';
+if (file_exists($helium_theme_path)) {
+    $heliumUpdater = PucFactory::buildUpdateChecker(
+        'http://updates.gantry.org/wp-updates/g5_helium_copy.json',
+        $helium_theme_path,
+        'g5_helium'
+    );
+}
+
+// Check and update for g5_hydrogen theme
+$hydrogen_theme_path = get_theme_root() . '/g5_hydrogen/style.css';
+if (file_exists($hydrogen_theme_path)) {
+    $hydrogenUpdater = PucFactory::buildUpdateChecker(
+        'http://updates.gantry.org/wp-updates/g5_hydrogen_copy.json',
+        $hydrogen_theme_path,
+        'g5_hydrogen'
+    );
+}
+// === Preserve Gantry theme settings on update ===
+add_action('upgrader_pre_install', function($return, $hook_extra) {
+    if (!empty($hook_extra['theme']) && in_array($hook_extra['theme'], ['g5_helium','g5_hydrogen'])) {
+        $themeDir = get_theme_root() . '/' . $hook_extra['theme'];
+        $backupDir = WP_CONTENT_DIR . '/gantry-theme-backups/' . $hook_extra['theme'];
+     require_once ABSPATH . 'wp-admin/includes/file.php';
+WP_Filesystem();
+
+global $wp_filesystem;
+
+if ($wp_filesystem->is_dir($backupDir)) {
+    $wp_filesystem->delete($backupDir, true); 
+}
+
+        wp_mkdir_p($backupDir);
+        if (is_dir("$themeDir/custom")) {
+            copy_dir("$themeDir/custom", "$backupDir/custom");
+        }
+        if (is_dir("$themeDir/config")) {
+            copy_dir("$themeDir/config", "$backupDir/config");
+        }
+    }
+    return $return;
+}, 10, 2);
+add_action('upgrader_post_install', function($return, $hook_extra) {
+    if (!empty($hook_extra['theme']) && in_array($hook_extra['theme'], ['g5_helium','g5_hydrogen'])) {
+        $themeDir = get_theme_root() . '/' . $hook_extra['theme'];
+        $backupDir = WP_CONTENT_DIR . '/gantry-theme-backups/' . $hook_extra['theme'];
+        if (is_dir("$backupDir/custom")) {
+            copy_dir("$backupDir/custom", "$themeDir/custom");
+        }
+        if (is_dir("$backupDir/config")) {
+            copy_dir("$backupDir/config", "$themeDir/config");
+        }
+    }
+    return $return;
+}, 10, 2);

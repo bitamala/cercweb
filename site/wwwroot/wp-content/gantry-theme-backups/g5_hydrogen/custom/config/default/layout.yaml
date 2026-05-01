@@ -1,0 +1,122 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1614615579
+layout:
+  /header/:
+    -
+      - 'logo-3736 11'
+      - 'menu-9797 89'
+  /navigation/: {  }
+  /showcase/: {  }
+  /feature/:
+    -
+      - 'spacer-4078 14'
+      - 'system-content-8949 72'
+      - 'spacer-3630 14'
+  /main/: {  }
+  /subfeature/: {  }
+  /footer/:
+    -
+      - 'copyright-6945 20'
+      - 'position-widget-6073 30'
+      - 'social-4472 21'
+      - 'branding-5969 29'
+    -
+      - custom-1246
+  offcanvas:
+    -
+      - mobile-menu-2793
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+content:
+  logo-3736:
+    title: 'Logo / Image'
+  menu-9797:
+    attributes:
+      menu: main
+  copyright-6945:
+    attributes:
+      date:
+        start: '2017'
+        end: now
+      owner: '| CERC'
+  position-widget-6073:
+    attributes:
+      widget: '{"type":"widget","widget":"search","title":"Search","options":{"widget":{"title":""}}}'
+      key: widget
+  social-4472:
+    attributes:
+      display: icons_only
+      items:
+        -
+          icon: 'fab fa-facebook'
+          text: Facebook
+          title: Facebook
+          link: 'https://facebook.com/cerccongo'
+          name: Facebook
+        -
+          icon: 'fab fa-twitter'
+          text: Twitter
+          title: Twitter
+          link: 'https://twitter.com/cerccongo'
+          name: Twitter
+        -
+          icon: 'fab fa-linkedin-in'
+          text: Linkedin
+          title: Linkedin
+          link: 'https://linkedin.com/company/cercongo'
+          name: Linkedin
+        -
+          icon: 'fab fa-instagram-square'
+          text: Instagram
+          title: Instagram
+          link: 'https://linkedin.com/company/cerccongo-org'
+          name: Linkedin
+        -
+          icon: 'fa fa-envelope'
+          text: Email
+          title: Email
+          link: 'mailto:info@anticorruption-center.org'
+          name: Email
+    block:
+      fixed: '1'
+  branding-5969:
+    attributes:
+      content: '<center style="font-size:15px;">CERC is a registered non-profit (Registration number: F.92/42579) and given Legal Personality by the Ministry of Justice: JUST/SG/20/21311/2021. </center>'
+  custom-1246:
+    title: 'Custom HTML'
+    attributes:
+      html: '<center style="font-size:15px;">CERC is a NGO with Special Consultative Status to the Economic and Social Council of the United Nations (ECOSOC).</center>'
+  mobile-menu-2793:
+    title: 'Mobile Menu'

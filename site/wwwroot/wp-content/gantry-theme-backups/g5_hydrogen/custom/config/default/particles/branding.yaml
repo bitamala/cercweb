@@ -1,0 +1,4 @@
+enabled: '1'
+content: 'Powered by <a href="http://anticorruption-center.org/" title="Centre de Recherche sur l''Anti-Corruption" class="g-powered-by">Centre de Recherche sur l''Anti-Corruption</a>'
+css:
+  class: branding
