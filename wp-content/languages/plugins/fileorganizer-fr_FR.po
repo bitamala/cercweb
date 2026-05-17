@@ -1,0 +1,237 @@
+# Translation of Plugins - FileOrganizer &#8211; WordPress File Manager - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - FileOrganizer &#8211; WordPress File Manager - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-05-23 23:08:29+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.3\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - FileOrganizer &#8211; WordPress File Manager - Stable (latest release)\n"
+
+#: main/settings.php:438
+msgid "here"
+msgstr "ici"
+
+#: main/settings.php:438
+msgid "or through Our Premium Support Ticket System at"
+msgstr "ou par l’intermédiaire de notre système de tickets de support Premium à"
+
+#: main/settings.php:438
+msgid "You can contact the FileOrganizer Team via email. Our email address is"
+msgstr "Vous pouvez contacter l’équipe de FileOrganizer par e-mail. Notre adresse e-mail est"
+
+#: main/settings.php:417
+msgid "Enable network volume."
+msgstr "Activer le volume réseau."
+
+#: main/settings.php:408
+msgid "Enable Network Volume"
+msgstr "Activer le volume réseau"
+
+#: main/settings.php:402
+msgid "MB"
+msgstr "Mo"
+
+#: main/settings.php:397
+msgid "Maximum Upload Size"
+msgstr "Taille maximale de téléversement"
+
+#: main/settings.php:383
+msgid "Enabling access to the FileOrganizer for User Roles"
+msgstr "Activer l’accès à FileOrganizer pour les rôles"
+
+#: main/settings.php:380
+msgid "Shop Manager"
+msgstr "Gestionnaire de boutique"
+
+#: main/settings.php:375
+msgid "Customer"
+msgstr "Client/cliente"
+
+#: main/settings.php:370
+msgid "Subscriber"
+msgstr "Abonné/abonnée"
+
+#: main/settings.php:365
+msgid "Contributor"
+msgstr "Contributeur/contributrice"
+
+#: main/settings.php:360
+msgid "Author"
+msgstr "Auteur/autrice"
+
+#: main/settings.php:355
+msgid "Editor"
+msgstr "Éditeur/éditrice"
+
+#: main/settings.php:350
+msgid "Administrator"
+msgstr "Administrateur/administratrice"
+
+#: main/settings.php:342
+msgid "Allowed User Roles"
+msgstr "Rôles autorisés"
+
+#: main/settings.php:335
+msgid "Available in Pro version!"
+msgstr "Disponible dans la version Pro !"
+
+#: main/settings.php:315
+msgid "The trash files are saved in the following path."
+msgstr "Les fichiers corbeille sont enregistrés dans le chemin d’accès suivant."
+
+#: main/settings.php:224
+msgid "List"
+msgstr "Liste"
+
+#: main/settings.php:223
+msgid "Icons"
+msgstr "Icônes"
+
+#: main/settings.php:173
+msgid "File Manager Path"
+msgstr "Chemin d’accès au gestionnaire de fichiers"
+
+#: main/settings.php:165
+msgid "Support"
+msgstr "Support"
+
+#: main/settings.php:162
+msgid "Advanced"
+msgstr "Avancé"
+
+#: main/settings.php:161
+msgid "General"
+msgstr "Général"
+
+#: main/settings.php:143
+msgid "Settings saved successfully."
+msgstr "Réglages bien enregistrés."
+
+#: main/settings.php:125
+msgid "Invalid File Manager Path Detected!"
+msgstr "Chemin d’accès au gestionnaire de fichiers non valide détecté !"
+
+#: main/fileorganizer.php:47
+msgid "Windows 10"
+msgstr "Windows 10"
+
+#: main/fileorganizer.php:46
+msgid "Material Light"
+msgstr "Matériel clair"
+
+#: main/fileorganizer.php:45
+msgid "Material Dark"
+msgstr "Matériel sombre"
+
+#: main/fileorganizer.php:44
+msgid "Material"
+msgstr "Matériel"
+
+#: main/fileorganizer.php:43
+msgid "Dark"
+msgstr "Sombre"
+
+#: main/fileorganizer.php:42
+msgid "Default"
+msgstr "Par défaut"
+
+#: main/fileorganizer.php:40
+msgid "Theme"
+msgstr "Thème"
+
+#: init.php:226
+msgid "License"
+msgstr "Licence"
+
+#: init.php:222 main/settings.php:389
+msgid "User Role Restrictions"
+msgstr "Restrictions par rôle"
+
+#: init.php:219 main/settings.php:390
+msgid "User Restrictions"
+msgstr "Restrictions pour les comptes"
+
+#: init.php:214
+msgid "Settings"
+msgstr "Réglages"
+
+#: main/settings.php:303
+msgid "Enable Trash?"
+msgstr "Activer la corbeille ?"
+
+#: main/settings.php:298
+msgid "Hide .htaccess file if exists."
+msgstr "Masquer le fichier .htaccess s’il existe."
+
+#: main/settings.php:289
+msgid "Hide .htaccess?"
+msgstr "Masquer .htaccess ?"
+
+#: main/settings.php:284
+msgid "Change the FileOrganizer default language."
+msgstr "Modifier la langue par défaut de FileOrganizer."
+
+#: main/settings.php:231
+msgid "Select Language"
+msgstr "Sélectionner la langue"
+
+#: main/settings.php:226
+msgid "Set default folder view."
+msgstr "Définir la vue par défaut des dossiers."
+
+#: main/settings.php:218
+msgid "Files View"
+msgstr "Vue des fichiers"
+
+#: main/settings.php:208
+msgid "Allow FileOrganizer to set a path outside of your WordPress installation."
+msgstr "Permettre à FileOrganizer de définir un chemin d’accès en dehors de votre installation WordPress."
+
+#: main/settings.php:207
+msgid "Disable root path restriction."
+msgstr "Désactiver la restriction du chemin d’accès à la racine."
+
+#: main/settings.php:196
+msgid "File Manager Path Restriction"
+msgstr "Restriction du chemin d’accès au gestionnaire de fichiers"
+
+#: main/settings.php:94
+msgid "Let your followers know that you use FileOrganizer to manage your wordpress files :"
+msgstr "Faites savoir à vos abonnés que vous utilisez FileOrganizer pour gérer vos fichiers WordPress :"
+
+#: init.php:211
+msgid "File Organizer"
+msgstr "Organisateur de fichiers"
+
+#: init.php:211
+msgid "FILE ORGANIZER"
+msgstr "Organisateur de fichiers"
+
+#. Author URI of the plugin
+#: fileorganizer.php
+msgid "https://fileorganizer.net"
+msgstr "https://fileorganizer.net"
+
+#. Author of the plugin
+#: fileorganizer.php
+msgid "Softaculous Team"
+msgstr "Équipe Softaculous"
+
+#. Plugin URI of the plugin
+#: fileorganizer.php
+msgid "https://wordpress.org/plugins/fileorganizer/"
+msgstr "https://wordpress.org/plugins/fileorganizer/"
+
+#. Plugin Name of the plugin
+#: fileorganizer.php main/fileorganizer.php:65
+msgid "FileOrganizer"
+msgstr "FileOrganizer"
+
+#. Description of the plugin
+#: fileorganizer.php
+msgid "FileOrganizer is a plugin that helps you to manage all files in your WordPress Site."
+msgstr "FileOrganizer est une extension qui vous aide à gérer tous les fichiers de votre site WordPress."

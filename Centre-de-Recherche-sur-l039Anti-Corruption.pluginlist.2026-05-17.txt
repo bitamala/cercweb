@@ -1,0 +1,44 @@
+------------------------------------------------------------
+  Plugin list generated with BackWPup version: 5.6.9
+  http://backwpup.com
+  Blog Name: Centre de Recherche sur l&#039;Anti-Corruption
+  Blog URL: https://cerc.cd
+  Generated on: 2026-05-17 12:36.33
+------------------------------------------------------------
+
+
+All plugin information:
+------------------------------
+3CX Live Chat (v.10.0.17) from 3CX
+	https://www.3cx.com/live-chat/free-wordpress-plugin/
+All-in-One WP Migration and Backup (v.7.105) from ServMask
+	https://servmask.com/
+BackWPup (v.5.6.9) from BackWPup – WordPress Backup & Restore Plugin
+	https://backwpup.com/
+FileOrganizer (v.1.1.9) from Softaculous Team
+	https://wordpress.org/plugins/fileorganizer/
+Gantry 5 Framework (v.5.6.1) from Tiger12, LLC
+	http://gantry.org/
+Media Deduper (v.1.5.9) from Cornershop Creative
+	https://www.mediadeduper.com/
+Polylang (v.3.8.3) from WP SYNTEX
+	https://polylang.pro
+Site Kit by Google (v.1.178.0) from Google
+	https://sitekit.withgoogle.com
+WP fail2ban (v.5.4.1) from Charles Lecklider
+	https://wp-fail2ban.com/
+
+Active plugins:
+------------------------------
+3CX Live Chat
+All-in-One WP Migration and Backup
+BackWPup
+FileOrganizer
+Gantry 5 Framework
+Media Deduper
+Polylang
+Site Kit by Google
+WP fail2ban
+
+Inactive plugins:
+------------------------------

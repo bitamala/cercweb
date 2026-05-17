@@ -1,0 +1,48 @@
+preset: preset2
+header:
+  background: '#ff6602'
+  text-color: '#ffffff'
+showcase:
+  background: '#fbe2ba'
+  image: 'gantry-media://cave1.jpg'
+  text-color: '#ffffff'
+subfeature:
+  background: '#fbe2ba'
+  text-color: '#ffffff'
+feature:
+  background: '#ffffff'
+  text-color: '#43556c'
+footer:
+  background: '#0c1c5c'
+  text-color: '#ebebeb'
+main:
+  background: '#ffffff'
+  text-color: '#43556c'
+navigation:
+  background: '#ff6602'
+  text-color: '#ffffff'
+  overlay: 'rgba(255, 255, 255, 0.76)'
+offcanvas:
+  background: '#ff6602'
+  text-color: '#ffffff'
+  width: 17rem
+  toggle-color: '#ffffff'
+  toggle-visibility: '1'
+base:
+  background: '#fffefc'
+  text-color: '#43556c'
+  body-font: 'family=Open+Sans:400,400italic'
+  heading-font: 'family=Noto+Sans:700,700italic,600,500,400,400italic,300'
+accent:
+  color-1: '#ff6602'
+  color-2: '#ff7f00'
+breakpoints:
+  large-desktop-container: 75rem
+  desktop-container: 60rem
+  tablet-container: 48rem
+  large-mobile-container: 40rem
+  mobile-menu-breakpoint: 48rem
+menu:
+  col-width: 180px
+  animation: g-fade-in-up
+  hide-on-mobile: '0'

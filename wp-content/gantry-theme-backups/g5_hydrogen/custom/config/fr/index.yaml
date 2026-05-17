@@ -1,0 +1,48 @@
+name: fr
+timestamp: 1778610848
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1614615579
+positions: {  }
+sections:
+  header: Header
+  navigation: Navigation
+  showcase: Showcase
+  feature: Feature
+  subfeature: Subfeature
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-9324: 'Logo / Image'
+  menu:
+    menu-9797: Menu
+  sample:
+    sample-1892: Showcase
+  custom:
+    custom-9675: 'Custom HTML'
+    custom-6353: 'Custom HTML'
+    custom-3557: 'Custom HTML'
+    custom-8369: 'Custom HTML'
+    custom-5231: 'Custom HTML'
+    custom-8092: 'Custom HTML'
+  contentarray:
+    contentarray-4250: 'WordPress Posts'
+    contentarray-5648: 'WordPress Posts'
+  copyright:
+    copyright-2888: Copyright
+  widget:
+    position-widget-8367: Widget
+  social:
+    social-4008: Social
+  branding:
+    branding-1550: Branding
+  mobile-menu:
+    mobile-menu-3595: 'Mobile Menu'
+inherit:
+  home:
+    offcanvas: offcanvas
+    mobile-menu-3595: mobile-menu-2793

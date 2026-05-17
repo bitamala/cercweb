@@ -1,0 +1,158 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home.png'
+  name: home
+  timestamp: 1614615579
+layout:
+  /header/:
+    -
+      - 'logo-3736 11'
+      - 'menu-9797 89'
+  /navigation/: {  }
+  /showcase/:
+    -
+      - sample-1892
+  /feature/:
+    -
+      - 'custom-7134 50'
+      - 'custom-9538 50'
+    -
+      - custom-1277
+    -
+      - contentarray-8583
+  /main/:
+    -
+      - custom-8369
+    -
+      - contentarray-4650
+  /subfeature/: {  }
+  footer: {  }
+  offcanvas:
+    -
+      - mobile-menu-2793
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  showcase:
+    type: section
+    attributes:
+      boxed: ''
+  feature:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  subfeature:
+    type: section
+    attributes:
+      class: flush
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  logo-3736:
+    title: 'Logo / Image'
+  menu-9797:
+    attributes:
+      menu: en
+  sample-1892:
+    title: Showcase
+    attributes:
+      image: ''
+      headline: ''
+      description: '<h3 style="font-size:22px;">We help government, public institutions, businesses and local communities solve complex problems related to corruption.</h3>'
+      link: 'https://anticorruption-center.org/theory-of-change/'
+      linktext: 'READ MORE'
+      samples: {  }
+  custom-7134:
+    title: 'Custom HTML'
+    attributes:
+      html: "<align=\"justify\"> <center>  <h3 style=\"font-size:22px\">  <p style=\"color:red\"> Inequality, exclusion and political instability: the real cost of corruption</p> </h3> </p> </justify> <img src=\"https://cerc.cd/wp-content/uploads/2026/05/concern-rs76676-drc-crisis-bulengo-camp-1.webp\"> <center>  <p  style=\"font-size:16px\"> <strong>Corruption</strong> is one of the most corrosive issues of our time. It wastes public resources, widens economic and social inequalities, breeds discontent and political polarisation and reduces trust in institutions. </p>\n<p <p  style=\"font-size:16px\"> <strong>Corruption</strong> perpetuates inequality and poverty, impacting well-being and the distribution of income and undermining opportunities to participate equally in social, economic and political life.</p>  </justify> "
+  custom-9538:
+    title: 'Custom HTML'
+    attributes:
+      html: '<align="justify"> <center> <h3 style="font-size:22px"> <p style="color: orange"> Integrity: a strategy against corruption in Democratic Republic of the Congo</p> </h3> </p> </justify>  <img src="https://cerc.cd/wp-content/uploads/2026/05/5677471-1701714747348-48304.webp"> <center>  <p  style="font-size:16px">A strategic and sustainable response to corruption is the integrity building. <strong>Integrity</strong> is essential for building strong institutions and assures citizens that the government is working in their interest, not just for the select few. <strong>Integrity</strong> is not just a moral issue, it is also about making economies more productive, public sectors more efficient, societies and economies more inclusive. It is about restoring trust, not just trust in government, but trust in public institutions, regulators, banks, and corporations.</p>  </justify> '
+  custom-1277:
+    title: 'Custom HTML'
+    attributes:
+      html: "<center> <h4 style=\"color: orange\">  Our Impact Stories </center> </h4>  \n\n"
+  contentarray-8583:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: '1'
+          posts: ''
+          sticky: show
+        limit:
+          total: '3'
+          columns: '3'
+          start: '0'
+        display:
+          pagination_buttons: show
+          image:
+            enabled: show
+          title:
+            enabled: show
+          read_more:
+            enabled: show
+            label: 'Read more'
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: ''
+        sort:
+          orderby: date
+          ordering: DESC
+  custom-8369:
+    title: 'Custom HTML'
+    attributes:
+      html: '<center> <h4 style="color: orange">  Blogs and News</center> </h4> '
+  contentarray-4650:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: ''
+          posts: ''
+          sticky: ''
+        limit:
+          total: '3'
+          columns: '3'
+          start: '0'
+        display:
+          pagination_buttons: show
+          image:
+            enabled: show
+          title:
+            enabled: show
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: ''
+        sort:
+          orderby: date
+          ordering: DESC
+  mobile-menu-2793:
+    title: 'Mobile Menu'

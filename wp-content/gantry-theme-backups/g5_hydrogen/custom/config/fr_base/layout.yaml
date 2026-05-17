@@ -1,0 +1,54 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1614615579
+layout:
+  /header/:
+    -
+      - 'logo-1617 11'
+      - 'menu-9797 89'
+  /navigation/: {  }
+  /main/:
+    -
+      - position-position-3438
+    -
+      - system-messages-6143
+    -
+      - 'spacer-2884 15'
+      - 'system-content-3702 70'
+      - 'spacer-5728 15'
+  footer: {  }
+  offcanvas:
+    -
+      - mobile-menu-8900
+structure:
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+      variations: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: fr
+      include:
+        - attributes
+        - children
+content:
+  logo-1617:
+    attributes:
+      class: gantry-logo
+  menu-9797:
+    attributes:
+      menu: fr
+  position-position-3438:
+    attributes:
+      key: breadcrumbs
+    title: Breadcrumbs

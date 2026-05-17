@@ -1,0 +1,9 @@
+enabled: '1'
+url: ''
+target: _parent
+image: 'gantry-media://Logo CERC Clear.svg'
+height: ''
+link: '1'
+svg: ''
+text: CERC
+class: gantry-logo
